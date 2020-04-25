@@ -130,5 +130,8 @@ class MainActivity : AppCompatActivity() {
         mColor = ContextCompat.getColor(this,
                 R.color.default_background)
         mShowCountTextView!!.setBackgroundColor(mColor)
+        val preferencesEditor = mPreferences!!.edit()
+        preferencesEditor.clear();
+        preferencesEditor.apply();
     }
 }
